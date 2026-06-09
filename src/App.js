@@ -1,11 +1,11 @@
-import Star from "./components/Star";
+import StarRating from "./components/StarRating";
 import "./css/index.css";
 
 function App() {
   return (
     <main className="app">
       <h1>Star Rating System</h1>
-      <Star />
+      <StarRating />
       <button className="dialog-button">
         Open Dialog
       </button>
