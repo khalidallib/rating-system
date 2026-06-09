@@ -7,7 +7,7 @@ function StarRating() {
   const ratingWords = [ "", "Poor","Fair", "Good", "Very Good", "Excellent"];
 
   return (
-    <div>
+    <div className="starList">
       {[1, 2, 3, 4, 5].map((starNumber) => (
         <Star
           key={starNumber}

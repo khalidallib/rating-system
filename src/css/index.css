@@ -10,3 +10,28 @@ body {
   width: min(100% - 30px, 1080px);
   margin-inline: auto;
 }
+.starList {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+  justify-content: center;
+}
+button {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  transition: ease-in-out 500ms;
+  display: block;
+  margin: 20px auto;
+}
+button:hover {
+  width: 115px;
+  background-color: #ffffff8a;
+}
+
+.dialog {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
