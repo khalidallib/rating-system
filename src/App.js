@@ -1,15 +1,23 @@
+import { useState } from "react";
 import StarRating from "./components/StarRating";
+import Dialog from "./components/Dialog";
 import "./css/index.css";
 
 function App() {
+  const [showDialog, setShowDialog] = useState(false);
+
   return (
-    <main className="app">
-      <h1>Star Rating System</h1>
+    <div>
       <StarRating />
-      <button className="dialog-button">
+
+      <button onClick={() => setShowDialog(true)}>
         Open Dialog
       </button>
-    </main>
+
+      {showDialog && (
+        <Dialog onClose={() => setShowDialog(false)} />
+      )}
+    </div>
   );
 }
 
